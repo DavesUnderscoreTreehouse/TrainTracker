@@ -1,2 +1,2 @@
 # TrainTracker
-A mini hardware project to display train locations from Translink's Public Transport API on an LED strip controlled by an Arduino and Raspberry Pi.
+A hardware project to display train locations from Translink's Public Transport API on an LED strip controlled by an Arduino and Raspberry Pi.
