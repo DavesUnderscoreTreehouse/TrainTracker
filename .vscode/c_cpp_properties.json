@@ -8,8 +8,7 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "E:/Documents/PlatformIO/Projects/TrainTracker-ESP/include",
-                "E:/Documents/PlatformIO/Projects/TrainTracker-ESP/src",
+                "E:/Documents/Home/Code/TrainTracker/src",
                 "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                 "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                 "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
@@ -244,8 +243,7 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "E:/Documents/PlatformIO/Projects/TrainTracker-ESP/include",
-                    "E:/Documents/PlatformIO/Projects/TrainTracker-ESP/src",
+                    "E:/Documents/Home/Code/TrainTracker/src",
                     "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/newlib/platform_include",
                     "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include",
                     "C:/Users/davem/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32/include/freertos/include/esp_additions/freertos",
