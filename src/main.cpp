@@ -10,6 +10,16 @@
 // Load Wi-Fi library
 #include <WiFi.h>
 
+#include <WiFiManager.h>
+// For configuring the Wifi credentials without re-programing
+// Availalbe on library manager (WiFiManager)
+// https://github.com/tzapu/WiFiManager
+
+#include <ESP_DoubleResetDetector.h>
+// For entering Config mode by pressing reset twice
+// Available on the library manager (Double Reset Detector)
+// https://github.com/datacute/DoubleResetDetector
+
 // Network credentials
 const char* ssid = "*ssid*";
 const char* password = "*password";
