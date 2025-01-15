@@ -20,10 +20,6 @@
 // Available on the library manager (Double Reset Detector)
 // https://github.com/datacute/DoubleResetDetector
 
-// Network credentials
-const char* ssid = "*ssid*";
-const char* password = "*password";
-
 // Web server port number
 WiFiServer server(80);
 
@@ -34,7 +30,11 @@ String header;
 String output32State = "off";
 String output33State = "off";
 
-// Output pins
+// ISR flags
+bool ISR_bootBtnToggle = false;
+
+// Pin definitions#
+#define bootBtn   0
 #define stripData 25
 #define output32  32
 #define output33  33
@@ -46,42 +46,74 @@ unsigned long previousTime = 0;
 // Define timeout time in ms
 const long timeoutTime = 2000;
 
-// function declarations:
+// Function declarations:
 void flashTest();
 void webServer();
+void ISR_bootBtnFalling();
 
 void setup() {
   // Open serial port
   Serial.begin(115200);
+  Serial.setDebugOutput(true);  // enable debug output
+  delay(5000);                  // Delay to open serial monitor
+  Serial.println("\n Starting");
+  
   // Set pinmodes
+  pinMode(bootBtn,  INPUT);
   pinMode(stripData,OUTPUT);
   pinMode(output32, OUTPUT);
   pinMode(output33, OUTPUT);
+  // Set interrupts
+  attachInterrupt(bootBtn, ISR_bootBtnFalling, FALLING);
   // Set outputs to LOW
   digitalWrite(output32, LOW);
   digitalWrite(output33, LOW);
 
-  // Connect to WiFi with stored credentials
-  Serial.print("Connecting to ");
-  Serial.println(ssid);
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  // Print local IP address and start web server
+  // Initalise wifi manager library
+  WiFiManager wm;
+  wm.setClass("invert");          // dark theme
+  wm.setWiFiAutoReconnect(true);  // set wifi to auto reconnect
+  wm.setConnectTimeout(30);       // 10s wifi failed to connect timeout
+  wm.setConfigPortalTimeout(180); // 180s config page timeout
+  bool res = wm.autoConnect("ESP32 Trains", "ILikeTrain5"); // Network credentials of config network
+  
+  // Print wifi connection status to serial
   Serial.println("");
-  Serial.println("WiFi connected.");
+  if(!res) {
+    Serial.println("Failed to connect or hit timeout.");
+    ESP.restart();      // If failed to connect at start-up reboot
+  } 
+  else
+    Serial.println("WiFi connected.");
+
+  // Print local IP address and start web server
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
   server.begin();
+
+  // Reset flag after boot
+  ISR_bootBtnToggle = false;
 }
 
 void loop(){
+  if (ISR_bootBtnToggle == true){
+    WiFiManager wm;
+    // Open WiFi config portal
+    if (!wm.startConfigPortal("ESP32 Trains","ILikeTrain5")) {
+        // Wifi failed to connect
+        Serial.println("WiFi failed to connect or hit timeout");
+        delay(3000);
+        ESP.restart();
+      } else {
+        // WiFi connected
+        Serial.println("WiFi connected");
+      }
+    ISR_bootBtnToggle = false;
+  }
   webServer();
 }
 
-// functions:
+// Functions:
 void flashTest(){
   digitalWrite(output32, HIGH);
   digitalWrite(output33, LOW);
@@ -188,4 +220,8 @@ void webServer(){
     Serial.println("Client disconnected.");
     Serial.println("");
   }
+}
+
+void ISR_bootBtnFalling() {
+    ISR_bootBtnToggle = true;
 }
