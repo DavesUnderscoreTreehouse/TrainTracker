@@ -61,3 +61,6 @@
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,c++,platformio
+
+# Secret values, SSIDs etc.
+src/arduino_secrets.h
