@@ -5,48 +5,61 @@
  * Web server code used to test from https://randomnerdtutorials.com/esp32-web-server-arduino-ide/
  ******/
 
-// Load Arduino library
+//**** Standard Libraries ****//
 #include <Arduino.h>
-// Load Wi-Fi library
 #include <WiFi.h>
 
+//**** Other Libraries ****//
 #include <WiFiManager.h>
 // For configuring the Wifi credentials without re-programing
-// Availalbe on library manager (WiFiManager)
 // https://github.com/tzapu/WiFiManager
 
 #include <ESP_DoubleResetDetector.h>
 // For entering Config mode by pressing reset twice
-// Available on the library manager (Double Reset Detector)
 // https://github.com/datacute/DoubleResetDetector
 
-// Web server port number
-WiFiServer server(80);
+#include <ArduinoHttpClient.h>
+// For interacting with API
+// https://github.com/arduino-libraries/ArduinoHttpClient
 
-// HTTP request holded
-String header;
+#include <ArduinoJson.h>
+// For manipulating received JSONs
+// https://github.com/bblanchon/ArduinoJson
 
-// Current output states
-String output32State = "off";
-String output33State = "off";
+#include <arduino_secrets.h>
+// Contains #defines for SSID, WiFi password & API key
+// NEED TO ADD YOU'RE OWN, NOT IN REPO
 
-// ISR flags
-bool ISR_bootBtnToggle = false;
 
-// Pin definitions#
+//**** Pins ****//
+// Pin definitions
 #define bootBtn   0
 #define stripData 25
 #define output32  32
 #define output33  33
 
+//**** Web Server ****//
+// Web server port number
+WiFiServer server(80);
+// HTTP request holder
+String header;
+// Current output states
+String output32State = "off";
+String output33State = "off";
 // Current time
 unsigned long currentTime = millis();
 // Previous time
 unsigned long previousTime = 0; 
-// Define timeout time in ms
+// Webserver timeout time in ms
 const long timeoutTime = 2000;
 
-// Function declarations:
+//**** ISRs ****//
+// ISR flags
+bool ISR_bootBtnToggle = false;
+
+//**** WiFiManager ****//
+
+//**** Function declarations ****//
 void flashTest();
 void webServer();
 void ISR_bootBtnFalling();
@@ -77,6 +90,10 @@ void setup() {
   wm.setConfigPortalTimeout(180); // 180s config page timeout
   bool res = wm.autoConnect("ESP32 Trains", "ILikeTrain5"); // Network credentials of config network
   
+  // Adding an additional config on the WIFI manager webpage for the API Key
+  WiFiManagerParameter customApiKey("apiKey", "API Key", SECRET_APIKEY, 50);
+  wm.addParameter(&customApiKey);
+
   // Print wifi connection status to serial
   Serial.println("");
   if(!res) {
@@ -97,6 +114,8 @@ void setup() {
 
 void loop(){
   if (ISR_bootBtnToggle == true){
+    Serial.println("WiFi config portal launching...");
+    WiFi.disconnect();
     WiFiManager wm;
     // Open WiFi config portal
     if (!wm.startConfigPortal("ESP32 Trains","ILikeTrain5")) {
@@ -223,5 +242,5 @@ void webServer(){
 }
 
 void ISR_bootBtnFalling() {
-    ISR_bootBtnToggle = true;
+  ISR_bootBtnToggle = true;
 }
