@@ -28,7 +28,7 @@
 
 #include <arduino_secrets.h>
 // Contains #defines for SSID, WiFi password & API key
-// NEED TO ADD YOU'RE OWN, NOT IN REPO
+// NEED TO ADD YOUR OWN, NOT IN REPO
 
 
 //**** Pins ****//
@@ -37,6 +37,10 @@
 #define stripData 25
 #define output32  32
 #define output33  33
+
+//**** ISRs ****//
+// Flag for onboard boot button
+bool ISR_bootBtnToggle = false;
 
 //**** Web Server ****//
 // Web server port number
@@ -53,11 +57,16 @@ unsigned long previousTime = 0;
 // Webserver timeout time in ms
 const long timeoutTime = 2000;
 
-//**** ISRs ****//
-// ISR flags
-bool ISR_bootBtnToggle = false;
-
-//**** WiFiManager ****//
+//**** Translink API ****/
+// Delay between API requests
+unsigned long requestDelay = 60000;
+// Translink Departure Monitor API gateway
+const char* serverName = "http://api.ipify.org/?format=json";
+// 
+WiFiClient wifi; 
+HttpClient client = HttpClient(wifi, serverName);
+// Translink API JSON Response
+JsonDocument trainData;
 
 //**** Function declarations ****//
 void flashTest();
@@ -113,23 +122,49 @@ void setup() {
 }
 
 void loop(){
-  if (ISR_bootBtnToggle == true){
-    Serial.println("WiFi config portal launching...");
-    WiFi.disconnect();
-    WiFiManager wm;
-    // Open WiFi config portal
-    if (!wm.startConfigPortal("ESP32 Trains","ILikeTrain5")) {
-        // Wifi failed to connect
-        Serial.println("WiFi failed to connect or hit timeout");
-        delay(3000);
-        ESP.restart();
-      } else {
-        // WiFi connected
-        Serial.println("WiFi connected");
-      }
-    ISR_bootBtnToggle = false;
+  // if (ISR_bootBtnToggle == true){
+  //   Serial.println("WiFi config portal launching...");
+  //   WiFi.disconnect();
+  //   WiFiManager wm;
+  //   // Open WiFi config portal
+  //   if (!wm.startConfigPortal("ESP32 Trains","ILikeTrain5")) {
+  //       // Wifi failed to connect
+  //       Serial.println("WiFi failed to connect or hit timeout");
+  //       delay(3000);
+  //       ESP.restart();
+  //     } else {
+  //       // WiFi connected
+  //       Serial.println("WiFi connected");
+  //     }
+  //   ISR_bootBtnToggle = false;
+  // }
+
+  //Send an HTTP GET request every 2 minutes
+  if ((millis() - previousTime) > requestDelay) {
+    //Check WiFi connection status
+    if(WiFi.status()== WL_CONNECTED){
+      Serial.println("Making GET request");
+      client.beginRequest();
+      client.get("/");
+      client.endRequest();
+      deserializeJson(trainData, client);
+      
+      // read status code and body of the response
+      int statusCode = client.responseStatusCode();
+      String response = client.responseBody();
+      Serial.print("Status code: ");
+      Serial.println(statusCode);
+      Serial.print("Response: ");
+      Serial.println(response);
+      Serial.println("Wait 60 seconds");
+    }
+    else {
+      Serial.println("WiFi Disconnected");
+    }
+    previousTime = millis();
   }
-  webServer();
+
+  //webServer();
 }
 
 // Functions:
