@@ -59,12 +59,16 @@ const long timeoutTime = 2000;
 
 //**** Translink API ****/
 // Delay between API requests
-unsigned long requestDelay = 60000;
+const long requestDelay = 120000;
+// Time of previous request
+unsigned long previousRequestTime = requestDelay;
 // Translink Departure Monitor API gateway
-const char* serverName = "http://api.ipify.org/?format=json";
+const char* serverAddress = "api.ipify.org";
+// Port number
+int port = 80;
 // 
 WiFiClient wifi; 
-HttpClient client = HttpClient(wifi, serverName);
+HttpClient client = HttpClient(wifi, serverAddress, port);
 // Translink API JSON Response
 JsonDocument trainData;
 
@@ -86,22 +90,17 @@ void setup() {
   pinMode(output32, OUTPUT);
   pinMode(output33, OUTPUT);
   // Set interrupts
-  attachInterrupt(bootBtn, ISR_bootBtnFalling, FALLING);
+  //attachInterrupt(bootBtn, ISR_bootBtnFalling, FALLING);
   // Set outputs to LOW
   digitalWrite(output32, LOW);
   digitalWrite(output33, LOW);
 
   // Initalise wifi manager library
   WiFiManager wm;
-  wm.setClass("invert");          // dark theme
   wm.setWiFiAutoReconnect(true);  // set wifi to auto reconnect
-  wm.setConnectTimeout(30);       // 10s wifi failed to connect timeout
+  wm.setConnectTimeout(30);       // 30s wifi failed to connect timeout
   wm.setConfigPortalTimeout(180); // 180s config page timeout
   bool res = wm.autoConnect("ESP32 Trains", "ILikeTrain5"); // Network credentials of config network
-  
-  // Adding an additional config on the WIFI manager webpage for the API Key
-  WiFiManagerParameter customApiKey("apiKey", "API Key", SECRET_APIKEY, 50);
-  wm.addParameter(&customApiKey);
 
   // Print wifi connection status to serial
   Serial.println("");
@@ -113,9 +112,9 @@ void setup() {
     Serial.println("WiFi connected.");
 
   // Print local IP address and start web server
-  Serial.println("IP address: ");
+  Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-  server.begin();
+  // server.begin();
 
   // Reset flag after boot
   ISR_bootBtnToggle = false;
@@ -139,19 +138,26 @@ void loop(){
   //   ISR_bootBtnToggle = false;
   // }
 
-  //Send an HTTP GET request every 2 minutes
-  if ((millis() - previousTime) > requestDelay) {
+  //Send an HTTP GET request each requestDelay
+  if ((millis() - previousRequestTime) > requestDelay) {
     //Check WiFi connection status
-    if(WiFi.status()== WL_CONNECTED){
-      Serial.println("Making GET request");
+    if(WiFi.status()== WL_CONNECTED){    
+
+      Serial.println("");
+      Serial.println("Starting request");
       client.beginRequest();
-      client.get("/");
+      Serial.println("Making GET request");
+      client.get("/?format=json");
+      Serial.println("End request");
       client.endRequest();
-      deserializeJson(trainData, client);
+
+      //deserializeJson(trainData, client);
       
       // read status code and body of the response
       int statusCode = client.responseStatusCode();
       String response = client.responseBody();
+
+      Serial.println("");
       Serial.print("Status code: ");
       Serial.println(statusCode);
       Serial.print("Response: ");
@@ -161,7 +167,7 @@ void loop(){
     else {
       Serial.println("WiFi Disconnected");
     }
-    previousTime = millis();
+    previousRequestTime = millis();
   }
 
   //webServer();
