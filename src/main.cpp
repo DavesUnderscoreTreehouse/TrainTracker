@@ -63,7 +63,7 @@ const long requestDelay = 120000;
 // Time of previous request
 unsigned long previousRequestTime = requestDelay;
 // Translink Departure Monitor API gateway
-const char* serverAddress = "api.ipify.org";
+const char* serverAddress = "opendata.translinkniplanner.co.uk";
 // Port number
 int port = 80;
 // 
@@ -74,6 +74,7 @@ JsonDocument trainData;
 
 //**** Function declarations ****//
 void flashTest();
+void getRequest();
 void webServer();
 void ISR_bootBtnFalling();
 
@@ -118,6 +119,9 @@ void setup() {
 
   // Reset flag after boot
   ISR_bootBtnToggle = false;
+
+  // Make one request
+  getRequest();
 }
 
 void loop(){
@@ -138,17 +142,34 @@ void loop(){
   //   ISR_bootBtnToggle = false;
   // }
 
+  
+
+  //webServer();
+}
+
+// Functions:
+void flashTest(){
+  digitalWrite(output32, HIGH);
+  digitalWrite(output33, LOW);
+  Serial.println("flash");
+  delay(500);
+  digitalWrite(output32, LOW);
+  digitalWrite(output33, HIGH);
+  Serial.println("flash");
+  delay(500);
+}
+
+void getRequest(){
   //Send an HTTP GET request each requestDelay
   if ((millis() - previousRequestTime) > requestDelay) {
     //Check WiFi connection status
     if(WiFi.status()== WL_CONNECTED){    
 
       Serial.println("");
-      Serial.println("Starting request");
+      Serial.println("Making request");
       client.beginRequest();
-      Serial.println("Making GET request");
-      client.get("/?format=json");
-      Serial.println("End request");
+      client.get("/Ext_API/XML_DM_REQUEST?ext_macro=dm&type_dm=any&name_dm=10000045&doNotSearchForStops_dm=1&maxChanges=0&genC=0");
+      client.sendHeader("X-API-TOKEN", SECRET_APIKEY);
       client.endRequest();
 
       //deserializeJson(trainData, client);
@@ -169,20 +190,6 @@ void loop(){
     }
     previousRequestTime = millis();
   }
-
-  //webServer();
-}
-
-// Functions:
-void flashTest(){
-  digitalWrite(output32, HIGH);
-  digitalWrite(output33, LOW);
-  Serial.println("flash");
-  delay(500);
-  digitalWrite(output32, LOW);
-  digitalWrite(output33, HIGH);
-  Serial.println("flash");
-  delay(500);
 }
 
 void webServer(){
