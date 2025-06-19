@@ -60,6 +60,8 @@ const long timeoutTime = 2000;
 //**** Translink API ****/
 // Delay between API requests
 unsigned long requestDelay = 60000;
+// Time of previous request
+unsigned long previousRequestTime = requestDelay;
 // Translink Departure Monitor API gateway
 const char* serverName = "http://api.ipify.org/?format=json";
 // 
@@ -140,7 +142,7 @@ void loop(){
   // }
 
   //Send an HTTP GET request every 2 minutes
-  if ((millis() - previousTime) > requestDelay) {
+  if ((millis() - previousRequestTime) > requestDelay) {
     //Check WiFi connection status
     if(WiFi.status()== WL_CONNECTED){
       Serial.println("Making GET request");
