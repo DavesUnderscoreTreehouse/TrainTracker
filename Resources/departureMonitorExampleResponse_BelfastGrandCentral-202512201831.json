@@ -1,0 +1,2841 @@
+{
+    "version": "10.6.21.17",
+    "systemMessages": [],
+    "locations": [
+        {
+            "id": "GC",
+            "isGlobalId": true,
+            "name": "Belfast, Grand Central Station",
+            "disassembledName": "Grand Central Station",
+            "coord": [
+                54.59484,
+                -5.93913
+            ],
+            "type": "stop",
+            "matchQuality": 100000,
+            "isBest": true,
+            "parent": {
+                "id": "placeID:31400030:147",
+                "name": "Belfast",
+                "type": "locality"
+            },
+            "assignedStops": [
+                {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "coord": [
+                        54.59484,
+                        -5.93913
+                    ],
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "productClasses": [
+                        0,
+                        5,
+                        12
+                    ],
+                    "connectingMode": 100,
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            ],
+            "properties": {
+                "stopId": "10000055"
+            }
+        }
+    ],
+    "stopEvents": [
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T18:35:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T18:35:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600258",
+                    "tripCode": 221,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T18:36:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T18:36:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600126",
+                    "tripCode": 134,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T18:45:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T18:45:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000053",
+                    "name": "Whitehead Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600324",
+                    "tripCode": 196,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP6",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "6",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59493,
+                    -5.94031
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "18",
+                    "platform": "6",
+                    "platformName": "6"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:00:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:00:00Z",
+            "transportation": {
+                "id": "rai:92005: :H:r13",
+                "name": "Rail Belfast - Dublin (Enterprise)",
+                "number": "Belfast - Dublin (Enterprise)",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "ENT",
+                    "id": "ENT",
+                    "name": "Enterprise"
+                },
+                "destination": {
+                    "id": "10000093",
+                    "name": "Connolly Rail Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600029",
+                    "tripCode": 34,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                },
+                {
+                    "priority": "normal",
+                    "id": "ems-4921",
+                    "version": 29387921,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/0726833c-e815-5a13-8454-ad1c7ada7c19?_=EMS",
+                            "content": "<div>\n<div>\n<div>From Sunday 12 October to Saturday 13 December 2025, (inclusive) the following services will be operated by an Irish Rail Intercity Service:</div>\n</div>\n<div>&bull; Departing Belfast Grand Central Station: 1000&nbsp;</div>\n<div>&bull; Departing Dublin Connolly: 0650&nbsp;</div>\n</div>\n<div>&nbsp;</div>\n<div>Enterprise will be operating a mixed fleet of trains with a variety of catering options.&nbsp;Please check details before booking <em><em><strong><a href=\"https://www.translink.co.uk/usingourservicesandproducts/ourservices/enterprise\" target=\"_blank\" rel=\"noopener\">click here</a></strong></em></em></div>\n<div>\n<div>&nbsp;</div>\n</div>",
+                            "subtitle": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct",
+                            "title": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:05:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:05:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600261",
+                    "tripCode": 222,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:06:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:06:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600128",
+                    "tripCode": 135,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP4",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "4",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59483,
+                    -5.9401
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "17",
+                    "platform": "4",
+                    "platformName": "4"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:10:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:10:00Z",
+            "transportation": {
+                "id": "rai:90003: :R:r13",
+                "name": "Rail Derry/Londonderry Line",
+                "number": "Derry/Londonderry Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000037",
+                    "name": "Derry Londonderry, Derry~Londonderry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600171",
+                    "tripCode": 91,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "veryHigh",
+                    "id": "ems-8312",
+                    "version": 1,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Derry Londonderry - Service Alteration",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b7d38a46-2ab6-54ac-aab8-75dad4927421?_=EMS",
+                            "content": "<div>\n<div>15:38 Derry Londonderry to Belfast Grand Central Station due 17:50 will be terminated at Lanyon Place.</div>\n<div>It will no longer call at Botanic, City Hospital and Belfast Grand Central Station.</div>\n</div>",
+                            "subtitle": "Derry Londonderry - Service Alteration",
+                            "title": "Derry Londonderry - Service Alteration"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:15:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:15:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000035",
+                    "name": "Larne Harbour Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600326",
+                    "tripCode": 197,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:34:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:34:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600130",
+                    "tripCode": 136,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T19:35:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T19:35:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600263",
+                    "tripCode": 223,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:05:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:05:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600265",
+                    "tripCode": 224,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:06:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:06:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600132",
+                    "tripCode": 137,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP4",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "4",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59483,
+                    -5.9401
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "17",
+                    "platform": "4",
+                    "platformName": "4"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:10:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:10:00Z",
+            "transportation": {
+                "id": "rai:90003: :R:r13",
+                "name": "Rail Derry/Londonderry Line",
+                "number": "Derry/Londonderry Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000037",
+                    "name": "Derry Londonderry, Derry~Londonderry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600173",
+                    "tripCode": 94,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "veryHigh",
+                    "id": "ems-8312",
+                    "version": 1,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Derry Londonderry - Service Alteration",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b7d38a46-2ab6-54ac-aab8-75dad4927421?_=EMS",
+                            "content": "<div>\n<div>15:38 Derry Londonderry to Belfast Grand Central Station due 17:50 will be terminated at Lanyon Place.</div>\n<div>It will no longer call at Botanic, City Hospital and Belfast Grand Central Station.</div>\n</div>",
+                            "subtitle": "Derry Londonderry - Service Alteration",
+                            "title": "Derry Londonderry - Service Alteration"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:15:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:15:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000035",
+                    "name": "Larne Harbour Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600328",
+                    "tripCode": 198,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:34:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:34:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600134",
+                    "tripCode": 139,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T20:35:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T20:35:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600267",
+                    "tripCode": 226,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:00:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:00:00Z",
+            "transportation": {
+                "id": "rai:92005: :H:r13",
+                "name": "Rail Belfast - Dublin (Enterprise)",
+                "number": "Belfast - Dublin (Enterprise)",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "ENT",
+                    "id": "ENT",
+                    "name": "Enterprise"
+                },
+                "destination": {
+                    "id": "10000093",
+                    "name": "Connolly Rail Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600033",
+                    "tripCode": 35,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                },
+                {
+                    "priority": "normal",
+                    "id": "ems-4921",
+                    "version": 29387921,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/0726833c-e815-5a13-8454-ad1c7ada7c19?_=EMS",
+                            "content": "<div>\n<div>\n<div>From Sunday 12 October to Saturday 13 December 2025, (inclusive) the following services will be operated by an Irish Rail Intercity Service:</div>\n</div>\n<div>&bull; Departing Belfast Grand Central Station: 1000&nbsp;</div>\n<div>&bull; Departing Dublin Connolly: 0650&nbsp;</div>\n</div>\n<div>&nbsp;</div>\n<div>Enterprise will be operating a mixed fleet of trains with a variety of catering options.&nbsp;Please check details before booking <em><em><strong><a href=\"https://www.translink.co.uk/usingourservicesandproducts/ourservices/enterprise\" target=\"_blank\" rel=\"noopener\">click here</a></strong></em></em></div>\n<div>\n<div>&nbsp;</div>\n</div>",
+                            "subtitle": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct",
+                            "title": "Enterprise service operated by different trains with varying facilities and catering - Updated 10 Oct"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:05:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:05:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600269",
+                    "tripCode": 229,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:06:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:06:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600136",
+                    "tripCode": 141,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP6",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "6",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59493,
+                    -5.94031
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "18",
+                    "platform": "6",
+                    "platformName": "6"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:10:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:10:00Z",
+            "transportation": {
+                "id": "rai:90003: :R:r13",
+                "name": "Rail Derry/Londonderry Line",
+                "number": "Derry/Londonderry Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000037",
+                    "name": "Derry Londonderry, Derry~Londonderry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600175",
+                    "tripCode": 97,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP3",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "3",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59477,
+                    -5.93998
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "7",
+                    "platform": "3",
+                    "platformName": "3"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:15:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:15:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000035",
+                    "name": "Larne Harbour Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600330",
+                    "tripCode": 199,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:35:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:35:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600271",
+                    "tripCode": 230,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T21:36:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T21:36:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000038",
+                    "name": "Lisburn Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600073",
+                    "tripCode": 105,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP5",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "5",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59487,
+                    -5.94019
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "10",
+                    "platform": "5",
+                    "platformName": "5"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T22:00:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T22:00:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000045",
+                    "name": "Portadown Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600138",
+                    "tripCode": 142,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T22:10:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T22:10:00Z",
+            "transportation": {
+                "id": "rai:90003: :R:r13",
+                "name": "Rail Derry/Londonderry Line",
+                "number": "Derry/Londonderry Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000021",
+                    "name": "Coleraine Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "100188",
+                    "tripCode": 2,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T22:15:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T22:15:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000035",
+                    "name": "Larne Harbour Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600332",
+                    "tripCode": 200,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP3",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "3",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59477,
+                    -5.93998
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "7",
+                    "platform": "3",
+                    "platformName": "3"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T22:35:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T22:35:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600273",
+                    "tripCode": 231,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T22:36:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T22:36:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000038",
+                    "name": "Lisburn Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600075",
+                    "tripCode": 106,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:00:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:00:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000044",
+                    "name": "Newry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600140",
+                    "tripCode": 143,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP3",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "3",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59477,
+                    -5.93998
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "7",
+                    "platform": "3",
+                    "platformName": "3"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:00:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:00:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000018",
+                    "name": "Carrickfergus Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "200011",
+                    "tripCode": 130,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP6",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "6",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59493,
+                    -5.94031
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "18",
+                    "platform": "6",
+                    "platformName": "6"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:10:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:10:00Z",
+            "transportation": {
+                "id": "rai:90003: :R:r13",
+                "name": "Rail Derry/Londonderry Line",
+                "number": "Derry/Londonderry Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000037",
+                    "name": "Derry Londonderry, Derry~Londonderry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600177",
+                    "tripCode": 101,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:15:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:15:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "200012",
+                    "tripCode": 143,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP8",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "8",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59503,
+                    -5.94051
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "19",
+                    "platform": "8",
+                    "platformName": "8"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:36:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:36:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000038",
+                    "name": "Lisburn Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600076",
+                    "tripCode": 107,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "location": {
+                "id": "70009000GCP2",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "2",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59473,
+                    -5.93991
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "16",
+                    "platform": "2",
+                    "platformName": "2"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:45:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:45:00Z",
+            "transportation": {
+                "id": "rai:90002: :R:r13",
+                "name": "Rail Larne Line",
+                "number": "Larne Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000035",
+                    "name": "Larne Harbour Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600334",
+                    "tripCode": 202,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP1",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "1",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.59468,
+                    -5.93983
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "6",
+                    "platform": "1",
+                    "platformName": "1"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:55:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:55:00Z",
+            "transportation": {
+                "id": "rai:90001: :R:r13",
+                "name": "Rail Bangor Line",
+                "number": "Bangor Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000005",
+                    "name": "Bangor Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600275",
+                    "tripCode": 233,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            }
+        },
+        {
+            "location": {
+                "id": "70009000GCP7",
+                "isGlobalId": true,
+                "name": "Belfast, Grand Central Station",
+                "disassembledName": "7",
+                "type": "platform",
+                "pointType": "TRACK",
+                "coord": [
+                    54.594970000000007,
+                    -5.94039
+                ],
+                "properties": {
+                    "stopId": "10000055",
+                    "area": "11",
+                    "platform": "7",
+                    "platformName": "7"
+                },
+                "parent": {
+                    "id": "GC",
+                    "isGlobalId": true,
+                    "name": "Belfast, Grand Central Station",
+                    "disassembledName": "Grand Central Station",
+                    "type": "stop",
+                    "parent": {
+                        "name": "Belfast",
+                        "type": "locality"
+                    },
+                    "properties": {
+                        "stopId": "10000055"
+                    }
+                }
+            },
+            "departureTimePlanned": "2025-12-20T23:59:00Z",
+            "departureTimeBaseTimetable": "2025-12-20T23:59:00Z",
+            "transportation": {
+                "id": "rai:90004: :H:r13",
+                "name": "Rail Portadown Line",
+                "number": "Portadown Line",
+                "product": {
+                    "id": 4,
+                    "class": 0,
+                    "name": "Rail",
+                    "iconId": 6
+                },
+                "operator": {
+                    "code": "NIRailw",
+                    "id": "RailNI",
+                    "name": "NIRailways"
+                },
+                "destination": {
+                    "id": "10000044",
+                    "name": "Newry Train Station",
+                    "type": "stop"
+                },
+                "properties": {
+                    "trainNumber": "600142",
+                    "tripCode": 144,
+                    "lineDisplay": "LINE"
+                },
+                "origin": {
+                    "id": "10000055",
+                    "name": "Belfast, Grand Central Station",
+                    "type": "stop"
+                }
+            },
+            "infos": [
+                {
+                    "priority": "normal",
+                    "id": "ems-7920",
+                    "version": 524695,
+                    "type": "lineInfo",
+                    "properties": {
+                        "publisher": "ems.comm.addinfo",
+                        "infoType": "lineInfo"
+                    },
+                    "infoLinks": [
+                        {
+                            "urlText": "Newry Rail Car Park Service Information",
+                            "url": "https://ems.translinkniplanner.co.uk/info-link/b5d9ace8-d264-531f-acdf-ed7837db139c?_=EMS",
+                            "content": "<div>The carpark at Newry rail station is extremely busy at this time of year.</div>\n<div>&nbsp;</div>\n<div>Please note Translink operates a bus service between Newry Bus / Rail Station 7 days a week - <a href=\"https://www.translink.co.uk/timetables?routeHashCode=cfa023e0e6a814e00730c09429f8c89383de3796aab4f6d698447b89f23810c9&amp;transportMode=Bus&amp;route=T2&amp;direction=H\" target=\"_blank\" rel=\"noopener\">service 341&gt;&gt;&gt;</a></div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>",
+                            "subtitle": "Newry Rail Car Park Service Information",
+                            "title": "Newry Rail Car Park Service Information"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

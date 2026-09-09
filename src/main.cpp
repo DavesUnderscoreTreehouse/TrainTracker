@@ -18,9 +18,9 @@
 // For entering Config mode by pressing reset twice
 // https://github.com/datacute/DoubleResetDetector
 
-#include <ArduinoHttpClient.h>
+#include <ESP32HTTPClient.h>
 // For interacting with API
-// https://github.com/arduino-libraries/ArduinoHttpClient
+// https://github.com/PedroFnseca/esp32-http-client
 
 #include <ArduinoJson.h>
 // For manipulating received JSONs
@@ -63,14 +63,12 @@ const long requestDelay = 120000;
 // Time of previous request
 unsigned long previousRequestTime = requestDelay;
 // Translink Departure Monitor API gateway
-const char* serverAddress = "opendata.translinkniplanner.co.uk";
+const char* serverAddress = "https://opendata.translinkniplanner.co.uk";
 // Port number
-int port = 80;
+int port = 443;
 // 
 WiFiClient wifi; 
-HttpClient client = HttpClient(wifi, serverAddress, port);
-// Translink API JSON Response
-JsonDocument trainData;
+ESP32HTTPClient https(serverAddress, 443);
 
 //**** Function declarations ****//
 void flashTest();
@@ -82,7 +80,7 @@ void setup() {
   // Open serial port
   Serial.begin(115200);
   Serial.setDebugOutput(true);  // enable debug output
-  delay(5000);                  // Delay to open serial monitor
+  //delay(5000);                  // Delay to open serial monitor
   Serial.println("\n Starting");
   
   // Set pinmodes
@@ -98,10 +96,14 @@ void setup() {
 
   // Initalise wifi manager library
   WiFiManager wm;
+  wm.preloadWiFi(SECRET_SSID, SECRET_PASSWORD);  // Preload wifi credentials
   wm.setWiFiAutoReconnect(true);  // set wifi to auto reconnect
   wm.setConnectTimeout(30);       // 30s wifi failed to connect timeout
   wm.setConfigPortalTimeout(180); // 180s config page timeout
   bool res = wm.autoConnect("ESP32 Trains", "ILikeTrain5"); // Network credentials of config network
+
+  // Set API key header for Translink API
+  https.setHeader("X-API-TOKEN", SECRET_API_KEY);
 
   // Print wifi connection status to serial
   Serial.println("");
@@ -160,6 +162,10 @@ void flashTest(){
 }
 
 void getRequest(){
+  char serverTime[24];
+  char name[64];
+  char stopId[16];
+
   //Send an HTTP GET request each requestDelay
   if ((millis() - previousRequestTime) > requestDelay) {
     //Check WiFi connection status
@@ -167,23 +173,28 @@ void getRequest(){
 
       Serial.println("");
       Serial.println("Making request");
-      client.beginRequest();
-      client.get("/Ext_API/XML_DM_REQUEST?ext_macro=dm&type_dm=any&name_dm=10000045&doNotSearchForStops_dm=1&maxChanges=0&genC=0");
-      client.sendHeader("X-API-TOKEN", SECRET_APIKEY);
-      client.endRequest();
-
-      //deserializeJson(trainData, client);
+      https.get("/Ext_API/XML_DM_REQUEST")
+        .query("ext_macro", "dm")
+        .query("type_dm", "any")
+        .query("name_dm", "10000055")
+        .query("doNotSearchForStops_dm", "1")
+        .query("inclMOT_0", "")
+        .query("includedMeans", "0")
+        .query("maxChanges", "0")
+        .query("genC", "0")
+        .getBody("serverInfo.serverTime", serverTime, sizeof(serverTime))
+        .getBody("locations.0.name", name, sizeof(name))
+        .getBody("locations.0.assignedStops.0.properties.stopId", stopId, sizeof(stopId));
+      https.end();
       
-      // read status code and body of the response
-      int statusCode = client.responseStatusCode();
-      String response = client.responseBody();
-
-      Serial.println("");
-      Serial.print("Status code: ");
-      Serial.println(statusCode);
-      Serial.print("Response: ");
-      Serial.println(response);
-      Serial.println("Wait 60 seconds");
+      // Check Status
+      if (https.getStatusCode() == 200) {
+        Serial.printf("Server time: %-s\n", serverTime);
+        Serial.printf("Station name: %-s\n", name);
+        Serial.printf("StopId: %-s\n", stopId);
+      } else {
+        Serial.printf("Error: %d\n", https.getStatusCode());
+      }
     }
     else {
       Serial.println("WiFi Disconnected");
